@@ -111,17 +111,83 @@ nav {
     margin-right: 0;
 }
 
-.navList div li a {
-    border-bottom: 1px solid transparent;
-    transition: 0.3s ease-in-out;
+.navList li a {
+	padding-bottom: 0.2rem;
+	transition: 0.3s ease-in-out;
 }
 
-.navList div li a:hover {
-    border-bottom: 1px solid var(--light);
+.navList li a::before {
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	background-color: var(--light);
+	top: 100%;
+	left: 0;
+	pointer-events: none;
+	opacity: 0;
+	transform-origin: 50% 0%;
+	transform: translate3d(0, 3px, 0);
+	transition-property: transform, opacity;
+	transition-duration: 0.3s;
+	transition-timing-function: cubic-bezier(0.2, 1, 0.8, 1);
+}
+
+.navList li a::after {
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	background: var(--light);
+	top: 100%;
+	left: 0;
+	pointer-events: none;
+	opacity: 0;
+	transform-origin: 50% 0%;
+	transform: translate3d(0, 3px, 0);
+	transition-property: transform, opacity;
+	transition-duration: 0.3s;
+	transition-timing-function: cubic-bezier(0.2, 1, 0.8, 1);
+}
+
+.navList li a:hover::before {
+	opacity: 1;
+	transform: translate3d(0, 0, 0);
+	transition-timing-function: cubic-bezier(0.2, 0, 0.3, 1);
+}
+
+.navList li a:hover::after {
+	opacity: 1;
+	transform: translate3d(0, 0, 0);
+	transition-timing-function: cubic-bezier(0.2, 0, 0.3, 1);
+}
+
+.navList li a::before {
+	content: '';
+}
+
+.navList li a::after {
+	content: '';
+	top: calc(100% + 4px);
+	width: 70%;
+	left: 15%;
+}
+
+.navList li a::before,
+.navList li a:hover::after {
+	transition-delay: 0.1s;
+}
+
+.navList li a:hover::before {
+	transition-delay: 0s;
 }
 
 .burgerToggle {
 	display: none;
+	background: none;
+	border: none;
+}
+
+.burgerToggle:active {
+	color: #e9692c;
 }
 
 /* Navbar end*/
@@ -130,13 +196,13 @@ nav {
 
 @media screen and (max-width: 1200px) {
 	html {
-		font-size: 8px;
+		font-size: 9px;
 	}
 }
 
 @media screen and (max-width: 728px) {
 	html {
-		font-size: 7px;
+		font-size: 8px;
 	}
 
 	.navList a {
