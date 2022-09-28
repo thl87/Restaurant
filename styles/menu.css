@@ -22,11 +22,7 @@ p {
     margin: 0 auto; 
 }
 
-#imgPlates,
-#menu {
-    /* display: flex; */
-    justify-content: space-around;
-    flex-direction: column;
+#imgPlates {
     padding: 3rem 0;
 } 
 
