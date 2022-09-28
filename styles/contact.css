@@ -1,0 +1,60 @@
+h2 {
+    font-size: var(--title-size);
+    font-family: "Roboto";
+
+
+}
+
+input {
+    border: solid black 1px;
+    /* background-color: var(--secondary); */
+    width: 30vw;
+    margin-top: 16px;
+    padding-left: 5px;
+    height: 2vh;
+
+
+
+}
+
+select {
+    border: solid gray 1px;
+    width: 30vw;
+    margin-top: 16px;
+    height: 2vh;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    margin-top: 16px;
+    color: gray;
+    padding-bottom: 10vh;
+    resize: none;
+}
+
+form :nth-child(6) {
+    width: 5vw;
+
+}
+
+
+.containerContact {
+    display: flex;
+    flex-direction: row;
+    border: 2px black solid;
+    margin: 5% 5% 3%;
+    justify-content: center;
+}
+
+.contactForm {
+    margin-right: 5%;
+    border: 1px red solid;
+
+}
+
+iframe {}
