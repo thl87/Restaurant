@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="/styles/common.css">
     <link rel="stylesheet" href="/styles/about.css">
 
@@ -13,13 +17,15 @@
 <body>
     <nav>
         <div class="navDiv">
-            <img src="/img/carrotLogo.svg" alt="Logo">
+            <img src="/img/svg/carrotLogo.svg" alt="Logo">
             <ul class="navList">
                 <li><a href="/">Home</a></li>
                 <li><a href="/pages/about.html">About</a></li>
                 <li><a href="/pages/menu.html">Menu</a></li>
                 <li><a href="/pages/contact.html">Contact</a></li>
-                <button class="burgerToggle" onclick="responsiveNav()">Open</button>
+                <button class="burgerToggle" onclick="responsiveNav()">
+                    <img src="/img/svg/burgerMenu.svg" alt="Open">
+                </button>
             </ul>
         </div>
     </nav>
