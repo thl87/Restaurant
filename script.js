@@ -1,3 +1,4 @@
+// Burger menu
 function responsiveNav() {
     let nav = document.querySelector("ul");
     if (nav.className === "navList") {
