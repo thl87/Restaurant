@@ -6,3 +6,14 @@ function responsiveNav() {
         nav.className = "navList"
     }
 }
+
+
+
+// fetch("./header.html")
+//     .then(response => {
+//     return response.text()
+//     })
+//     .then(data => {
+//     document.querySelector("header").innerHTML = data;
+//     document.querySelector("nav").innerHTML = data;
+//     });
