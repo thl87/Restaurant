@@ -30,13 +30,16 @@ p {
     padding: 3rem 0;
 } 
 
-#imgPlates div {
- /* display: flex; */
- justify-content: space-between
-}
-
 .plateLine {
     display: flex;
+    justify-content: space-between;
+}
+
+.plate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .separator {
@@ -47,35 +50,22 @@ p {
     margin-top: 70px;
 }
 
-
-@media (max-width: 319px){
-   
+@media screen and (max-width: 1200px) {
+    .plate img {
+        width: 200px;
+        height: 200px;
+    }
 }
 
-@media (min-width: 320px) and (max-width: 374px){
-   
-}
+@media screen and (max-width: 768px) {
+    .plate img {
+        width: 100px;
+        height: 100px;
+    }
 
-@media (min-width: 375px) and (max-width: 424px){
-    
-}
-
-@media (min-width: 425px) and (max-width: 767px){
-    
-}
-
-@media (max-width: 767px){
-    
-}
-
-@media (min-width: 768px) and (max-width: 768px){
-    
-}
-
-@media (min-width: 769px) and (max-width: 1023px){   
-    
-}
-
-@media (width: 1024px){
-      
+    .plateLine {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: baseline;
+    }
 }
