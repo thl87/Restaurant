@@ -1,0 +1,60 @@
+body {
+    margin: 5px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+}
+
+.aboutus {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+h1 {
+    margin: 30px;
+    font-size: 35px;
+    text-align: left;
+}
+
+.paragraphes {
+    width: 55%;
+    margin: 0 auto;
+}
+
+p {
+    margin: 15px;
+    font-size: 15px;
+    width: 300px;
+}
+
+#cook {
+    height: 90vh;
+}
+
+.imgresto {
+    display: flex;
+    justify-content: center;
+}
+
+#resto {
+    margin: 12px;
+    height: 25vh;
+    object-fit: contain;
+}
+
+
+@media screen and (width < 950px) {
+    .imgresto {
+        flex-wrap: wrap;
+    }
+
+    .main {
+        flex-wrap: wrap;
+    }
+
+
+}
