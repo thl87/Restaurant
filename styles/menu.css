@@ -17,13 +17,9 @@ p {
 }
 
 #global {
-    height: 90vh;
+    padding-top: 10vh;
     width: 90%;
-    margin: 0 auto;
-    /* display: grid; */
-    /* grid-template-columns: 1fr 3fr; */
-    
-    
+    margin: 0 auto; 
 }
 
 #imgPlates,
@@ -34,12 +30,12 @@ p {
     padding: 3rem 0;
 } 
 
-#imgPlates div{
+#imgPlates div {
  /* display: flex; */
  justify-content: space-between
 }
 
-.plateLign {
+.plateLine {
     display: flex;
 }
 
@@ -83,5 +79,3 @@ p {
 @media (width: 1024px){
       
 }
-
-
