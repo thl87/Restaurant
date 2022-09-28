@@ -76,7 +76,7 @@ header a {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-section {
+main {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -94,7 +94,7 @@ section {
     line-height: 1.5;
 }
 
-section div {
+.mainInner {
     width: 95%;
 }
 
