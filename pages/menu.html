@@ -1,29 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="/styles/common.css">
     <link rel="stylesheet" href="/styles/menu.css">
 
     <title>🥕 La Fière Carotte | Restaurant veggie</title>
+    
 </head>
+
 <body>
+    
     <nav>
-        <div class="navDiv">
-            <img src="/img/carrotLogo.svg" alt="Logo">
-            <ul class="navList">
-                <li><a href="/">Home</a></li>
-                <li><a href="/pages/about.html">About</a></li>
-                <li><a href="/pages/menu.html">Menu</a></li>
-                <li><a href="/pages/contact.html">Contact</a></li>
-                <button class="burgerToggle" onclick="responsiveNav()">Open</button>
-            </ul>
-        </div>
+        
     </nav>
 
-    <script src="/script.js"></script>
+    <main id="global">
+        <div id="imgPlates">
+            <h1>Menus</h1>
+            <h2>Entrée</h2>
+
+            <div class=" plateLine">
+                <div class="plate">
+                    <img src="/img/imagesMenu/toastStarter.jpg" alt="toastStarter" width="300" height="300" loading="lazy">
+                    <p>Tartine Veggie.</p>
+                    <p>7 euros</p>
+                </div>
+                <div class="plate">
+                    <img src="/img/imagesMenu/hermesRivera.jpg" alt="hermesRivera" width="300" height="300" loading="lazy">
+                    <p>Salade et mélange légumes quinoa.</p>
+                    <p>8 euros</p>
+                </div>
+                <div class="plate">
+                    <img src="/img/imagesMenu/julius.jpg" alt="julius" width="300" height="300" loading="lazy">
+                    <p>Crumble vegan et son mélange de fruits.</p>
+                    <p>8 euros</p>
+                </div>
+            </div>
+            
+            <div class="separator"></div>
+
+            <h2>Plats</h2>
+            <div class="plateLine">
+                <div class="plate">
+                    <img src="/img/imagesMenu/salade.jpg" alt="salade" width="300" height="300" loading="lazy">
+                    <p>Salade composée complète.</p>
+                    <p>10 euros</p>
+                </div>
+                <div class="plate">
+                    <img src="/img/imagesMenu/lentil-soup.jpg" alt="lentilSoup" width="300" height="300" loading="lazy">
+                    <p>Soupe de lentilles.</p>
+                    <p>11 euros</p>
+                </div>
+                <div class="plate">
+                    <img src="/img/imagesMenu/hamburger.jpg" alt="hamburger" width="300" height="300" loading="lazy">
+                    <p>Hamburger vegan.</p>
+                    <p>13 euros</p>
+                </div>
+            </div>
+
+            <div class="separator"></div>
+        
+            <h2>Desserts</h2>
+            <div class="plateLine">
+                <div class="plate">
+                    <img src="../img/imagesMenu/carrotCake.jpg" alt="carrotCake" width="300" height="300" loading="lazy">
+                    <p>Carrot Cake.</p>
+                    <p>8 euros</p>
+                </div>
+                <div class="plate">
+                    <img src="../img/imagesMenu/smoothie.jpg" alt="smoothie" width="300" height="300" loading="lazy">
+                    <p>Smoothie, fruits aux choix.</p>
+                    <p>6 euros</p>
+                </div>
+                <div class="plate">
+                    <img src="../img/imagesMenu/chocolateCake.jpg" alt="chocolateCake" width="300" height="300" loading="lazy">
+                    <p>Gâteau au chocolat vegan.</p>
+                    <p>9 euros</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        
+    </footer>
+
+    <script src="../script.js"></script>
 </body>
+
 </html>

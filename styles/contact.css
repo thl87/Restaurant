@@ -1,13 +1,19 @@
+body {
+    margin-top: calc(10vh + 21px);
+}
+
 h2 {
     font-size: var(--title-size);
     font-family: "Roboto";
-    text-decoration: underline;
+
     margin-bottom: 30px;
 }
 
 input {
     border: solid black 1px;
-    background-color: rgb(233, 233, 233);
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px black inset;
+
     width: 40vw;
     /* margin-top: 16px; */
     padding-left: 5px;
@@ -15,9 +21,11 @@ input {
 }
 
 select {
+    text-align: center;
     border: solid gray 1px;
     width: 40vw;
     height: 2vh;
+    border-radius: 10px;
 
 }
 
@@ -32,24 +40,27 @@ form {
 
 textarea {
     margin-top: 16px;
-    background-color: rgb(233, 233, 233);
+    ;
     color: gray;
     padding-left: 5px;
     padding-right: 5px;
     padding-bottom: 10vh;
     resize: none;
     font-family: "Roboto";
+    border-radius: 10px;
 }
 
 #contactSelect {
     width: 100%;
     height: auto;
-
+    color: gray
 }
 
 form :last-child {
-    width: 5vw;
+
+    width: 70px;
     height: 2vh;
+
 
 }
 
@@ -83,7 +94,7 @@ form :last-child {
     }
 
     form :last-child {
-        width: 20%;
+        /* width: 20%; */
 
     }
 
