@@ -32,6 +32,7 @@ html {
 
 body {
 	line-height: 1;
+	cursor: default;
 }
 
 ol, ul {
@@ -65,10 +66,10 @@ a {
 
 :root {
     --light: #dddddd;
-    --primary: ;
-    --secondary: #66875b;
-	--third: #e9692c;
+    --primary: #375a2c;
+	--dark: #111111;
 	--sans-serif: 'Roboto', sans-serif;
+	--title: 'Comfortaa', cursive;
 }
 
 /* Variables end */
@@ -83,7 +84,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--secondary);
+    background-color: var(--primary);
 	color: var(--light);
 	font-family: var(--sans-serif);
 	z-index: 3;
@@ -97,23 +98,35 @@ nav {
     justify-content: space-between;
 }
 
+.navLogo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.navLogo p {
+	font-size: 3rem;
+	font-family: var(--title);
+}
+
 .navList {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.navList span {
+	margin: 0 1rem;
+	font-size: 2rem;
+}
+
 .navList li {
     position: relative;
     list-style-type: none;
-    margin-right: 1.5rem;
     font-size: 2rem;
     z-index: 2;
 }
 
-.navList li:last-of-type {
-    margin-right: 0;
-}
 
 .navList li a {
 	padding-bottom: 0.2rem;
@@ -199,47 +212,125 @@ nav {
 /* Footer start */
 
 footer {
+	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	padding: 1rem 0;
-	background-color: var(--secondary);
+	flex-direction: column;
+	text-align: center;
+	padding: 5rem 5% 1rem;
+	background-color: var(--primary );
 	color: var(--light);
+	font-family: var(--sans-serif);
 }
 
-footer div {
+.mainSectionFooter {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	align-items: center;
+	gap: 2rem;
+}
+
+.footerDesc {
 	display: flex;
-	align-items: flex-start;
+	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+	text-align: start;
 }
 
-footer div h3 {
-	font-size: 1.5rem;
+.footerDesc h2 {
+	width: 100%;
+	margin-bottom: 2rem;
+	font-size: 3rem;
 	font-weight: 700;
+	font-family: var(--title);
+}
+
+.footerDesc p {
+	font-size: 1.5rem;
+	line-height: 1.5;
+}
+
+.footerOpenings {
+	margin-bottom: 2rem;
+}
+
+.footerOpenings h2 {
+	margin-bottom: 2rem;
+	font-size: 3rem;
+	font-family: var(--title);
+	font-weight: 700;
+}
+
+.footerOpenings p {
+	margin-bottom: 1rem;
+	font-size: 2rem;
+}
+
+.footerOpenings p:last-of-type {
+	margin-bottom: none;
+}
+
+.footerAddress p {
+	margin-bottom: 2rem;
+	font-size: 2.5rem;
 	text-transform: capitalize;
 }
 
-footer div p {
-	font-size: 1.3rem;
-}
-
-footer div p:first-of-type {
-	margin: 1rem 0;
-}
-
-footer div a {
-	margin-bottom: 1rem;
-	font-size: 1.3rem;
-}
-
-footer div a:last-of-type {
+.footerAddress p:last-of-type {
 	margin-bottom: 0;
 }
 
-footer div a img {
-	height: 20px;
-	width: 20px;
+hr {
+	width: 50%;
+	height: 1px;
+	margin: 0 auto;
+	color: var(--light);
+	background-color: var(--light);
+	border: none;
+	border-radius: 10px;
+}
+
+.footerSocials {
+	margin: 3rem 0;
+}
+
+.footerSocials a {
+	margin-right: 2rem;
+}
+
+.footerSocials a:last-of-type {
+	margin-right: 0;
+}
+
+.footerLinks {
+	margin-bottom: 3rem;
+	font-size: 1.5rem;
+}
+
+.footerLinks a {
+	border-bottom: 1px solid transparent;
+	transition: 0.3s ease-in-out;
+}
+
+.footerLinks a:hover {
+	border-bottom: 1px solid var(--light);
+}
+
+.footerLinks span {
+	margin: 0 1rem;
+}
+
+.footerCopyright {
+	font-size: 1.3rem;
+}
+
+.carrotFooter {
+	position: absolute;
+	top: 50%;
+	right: 5rem;
+	transform: translateY(-50%);
 }
 
 /* Footer end */
@@ -257,6 +348,10 @@ footer div a img {
 		font-size: 8px;
 	}
 
+	.navList span {
+		display: none;
+	}
+
 	.navList a {
 		display: none;
 	}
@@ -271,6 +366,10 @@ footer div a img {
 		justify-content: center;
 	}
 
+	.navList.responsive span {
+		display: inline;
+	}
+
 	.navList.responsive li:last-of-type {
 		margin-right: 1.5rem;
 	}
@@ -278,6 +377,34 @@ footer div a img {
 	.navList.responsive a {
 		display: block;
 		text-align: left;
+	}
+
+	.mainSectionFooter {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 3rem;
+	}
+
+	.footerDesc {
+		display: none;
+	}
+
+	hr {
+		width: 80%;
+	}
+
+	.footerLinks {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 2rem;
+	}
+
+	.footerLinks span {
+		display: none;
+	}
+
+	.footerLinks a {
+		margin-bottom: 1rem;
 	}
 }
 

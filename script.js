@@ -12,11 +12,17 @@ let navbar = document.querySelector("nav");
 
 navbar.innerHTML += `
     <div class="navDiv">
-        <img src="/img/svg/carrotLogo.svg" alt="Logo">
+        <div class="navLogo">
+            <img src="/img/svg/carrotLogo.svg" alt="Logo">
+            <p>La f<img src="/img/svg/carrot.svg" alt="i">ère carotte</p>
+        </div>
         <ul class="navList">
             <li><a href="/pages/index.html">Home</a></li>
+            <span>-</span>
             <li><a href="/pages/about.html">About</a></li>
+            <span>-</span>
             <li><a href="/pages/menu.html">Menu</a></li>
+            <span>-</span>
             <li><a href="/pages/contact.html">Contact</a></li>
             <button class="burgerToggle" onclick="responsiveNav()">
                 <img src="/img/svg/burgerMenu.svg" alt="Open">
@@ -28,25 +34,50 @@ navbar.innerHTML += `
 let footer = document.querySelector("footer");
 
 footer.innerHTML += `
-    <div>
-        <h3>© La fière carotte</h3>
-        <p>06 07 08 09 10</p>
-        <p>4 rue Baron</p>
-    </div>
-    <div>
-        <a href="/">Mentions légales</a>
-        <a href="/">Politique de confidentialité</a>
-        <a href="/">Conditions d'utilisation</a>
-    </div>
-    <div>
-        <a href="/" title="Tripadvisor">
-            <img src="/img/logo/tripadvisor.svg" alt="">
-        </a>
-        <a href="/" title="Instagram">
-            <img src="/img/logo/instagram.svg" alt="Instagram">
-        </a>
-        <a href="/" title="Facebook">
-            <img src="/img/logo/facebook.svg" alt="Facebook">
-        </a>
-    </div>
+    <section class="mainSectionFooter">
+        <div class="footerDesc">
+            <h2>La fière carotte</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eligendi voluptates molestias pariatur dolor et, sed eaque ipsum non sunt autem aperiam veniam laboriosam deleniti sit tempora. Tempora, eaque in!</p>
+        </div>
+        <div class="footerOpenings">
+            <h2>Horaires</h2>
+            <p>Lundi : 11h - 14h / 19h - 21h</p>
+            <p>Mardi : 11h - 14h / 19h - 21h</p>
+            <p>Mercredi : 11h - 14h / 19h - 21h</p>
+            <p>Jeudi : 11h - 14h / 19h - 21h</p>
+            <p>Vendredi : 11h - 14h / 19h - 00h</p>
+            <p>Samedi : 11h - 15h / 19h - 00h</p>
+            <p>Dimanche : 11h - 15h / 19h - 23h</p>
+        </div>
+        <div class="footerAddress">
+            <p>4 rue Baron</p>
+            <p>06 07 08 09 10</p>
+        </div>
+    </section>
+    <hr />
+    <section class="secondSectionFooter">
+        <div class="footerSocials">
+            <a href="/">
+                <img src="/img/logo/facebook.svg" alt="Facebook" width="30" height="30">
+            </a>
+            <a href="/">
+                <img src="/img/logo/instagram.svg" alt="Instagram" width="30" height="30">
+            </a>
+            <a href="/">
+                <img src="/img/logo/tripadvisor.svg" alt="Tripadvisor" width="30" height="30">
+            </a>
+        </div>
+        <div class="footerLinks">
+            <a href="/">Mentions légales</a>
+            <span>-</span>
+            <a href="/">Politique de confidentialité</a>
+            <span>-</span>
+            <a href="/">Conditions d'utilisation</a>
+            <span>-</span>
+            <a href="/">Sitemap</a>
+        </div>
+        <div class="footerCopyright">
+            <p>© 2022 La fière carotte</p>
+        </div>
+    </section>
 `;
