@@ -71,7 +71,7 @@ footer.innerHTML += `
             </a>
         </div>
         <div class="footerLinks">
-            <a href="#">Mentions légales</a>
+            <a href="/pages/mentions.html">Mentions légales</a>
             <span>-</span>
             <a href="#">Politique de confidentialité</a>
             <span>-</span>
