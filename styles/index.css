@@ -74,6 +74,7 @@ h1 {
     margin-bottom: 1rem;
     font-size: 4.5rem;
     font-family: var(--sans-serif);
+    text-align: center;
 }
 
 .sectionBanner p {
