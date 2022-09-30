@@ -58,24 +58,24 @@ footer.innerHTML += `
     <hr />
     <section class="secondSectionFooter">
         <div class="footerSocials">
-            <a href="/">
+            <a href="#">
                 <img src="/img/logo/facebook.svg" alt="Facebook" width="30" height="30">
             </a>
-            <a href="/">
+            <a href="#">
                 <img src="/img/logo/instagram.svg" alt="Instagram" width="30" height="30">
             </a>
-            <a href="/">
+            <a href="#">
                 <img src="/img/logo/tripadvisor.svg" alt="Tripadvisor" width="30" height="30">
             </a>
         </div>
         <div class="footerLinks">
-            <a href="/">Mentions légales</a>
+            <a href="#">Mentions légales</a>
             <span>-</span>
-            <a href="/">Politique de confidentialité</a>
+            <a href="#">Politique de confidentialité</a>
             <span>-</span>
-            <a href="/">Conditions d'utilisation</a>
+            <a href="#">Conditions d'utilisation</a>
             <span>-</span>
-            <a href="/">Sitemap</a>
+            <a href="#">Sitemap</a>
         </div>
         <div class="footerCopyright">
             <p>© 2022 La fière carotte</p>
