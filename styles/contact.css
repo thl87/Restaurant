@@ -1,9 +1,5 @@
-body {
-    margin-top: calc(10vh + 21px);
-}
-
-h2 {
-    font-size: var(--title-size);
+h1 {
+    font-size: 5rem;
     font-family: "Roboto";
 
     margin-bottom: 30px;
@@ -71,7 +67,7 @@ form :last-child {
     display: flex;
     flex-direction: row;
     /* border: 2px black solid; */
-    margin: 2% 5% 3%;
+    margin: calc(10vh + 4rem);
     justify-content: center;
 }
 

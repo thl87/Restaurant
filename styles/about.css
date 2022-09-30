@@ -13,8 +13,9 @@
 
 h1 {
     margin: 30px;
-    font-size: 35px;
+    font-size: 5rem;
     text-align: left;
+    text-transform: capitalize;
     padding-left: 2em;
     font-family: var(--sans-serif);
 }
