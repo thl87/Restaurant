@@ -196,6 +196,11 @@ nav {
 	font-family: var(--title);
 }
 
+.responsiveTitle {
+	display: none;
+	font-size: 2rem;
+}
+
 .navList {
 	display: flex;
 	align-items: center;
@@ -434,6 +439,18 @@ hr {
 		font-size: 8px;
 	}
 
+	.responsiveTitle {
+		display: block;
+	}
+
+	.mainTitle {
+		display: none;
+	}
+
+	.imgLogo {
+		display: none;
+	}
+
 	.navList span {
 		display: none;
 	}
@@ -454,6 +471,7 @@ hr {
 
 	.navList.responsive span {
 		display: inline;
+		margin: 0 0.5rem;
 	}
 
 	.navList.responsive li:last-of-type {
