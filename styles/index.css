@@ -216,16 +216,33 @@ h1 {
         margin-bottom: 0;
     }
 
+    .firstSubtitle span {
+        display: block;
+        padding-bottom: 2rem;
+    }
+
+    .firstSubtitle span:last-of-type {
+        padding-bottom: 0;
+    }
+
+    .firstSubtitle span:nth-last-of-type(2) {
+        display: none;
+    }
+
+    .firstSubtitle br {
+        display: block;
+    }
+
     .firstGrid {
         display: flex;
         flex-direction: column;
-        margin-bottom: 2rem;
+        padding-bottom: 2rem;
     }
 
     .secondGrid {
         display: flex;
         flex-direction: column-reverse;
-        margin-bottom: 0;
+        padding-bottom: 0;
     }
 
     .sectionGridTxt {

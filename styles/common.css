@@ -174,7 +174,7 @@ nav {
     background-color: var(--primary);
 	color: var(--light);
 	font-family: var(--sans-serif);
-	z-index: 3;
+	z-index: 4;
 
 }
 
@@ -211,6 +211,27 @@ nav {
 .navList span {
 	margin: 0 1rem;
 	font-size: 2rem;
+}
+
+.navInner {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.navList.responsive .navInner {
+	width: 101vw;
+	padding-bottom: 1rem;
+	position: absolute;
+	top: 10vh;
+	right: 50%;
+	transform: translate(50%, 0);
+	background-color: var(--primary);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
 }
 
 .navList li {
@@ -292,12 +313,30 @@ nav {
 
 .burgerToggle {
 	display: none;
+	width: 40px;
 	background: none;
 	border: none;
 }
 
-.burgerToggle:active {
-	color: var(--third);
+.burgerToggle:before,
+.burgerToggle:after,
+.burgerToggle div {
+	background: var(--light);
+	content: "";
+	display: block;
+	height: 4px;
+	border-radius: 5px;
+	margin: 7px 0;
+	transition: 0.5s;
+}
+.burgerToggle.toggled:before {
+	transform: translateY(12px) rotate(135deg);
+}
+.burgerToggle.toggled:after {
+	transform: translateY(-12px) rotate(-135deg);
+}
+.burgerToggle.toggled div {
+	transform: scale(0);
 }
 
 /* Navbar end*/
@@ -463,17 +502,17 @@ hr {
 	}
 
 	.navList.responsive span {
-		display: inline;
-		margin: 0 0.5rem;
+		display: none;
 	}
 
-	.navList.responsive li:last-of-type {
-		margin-right: 1.5rem;
+	.navList.responsive li {
+		margin-bottom: 2rem;
 	}
 
 	.navList.responsive a {
 		display: block;
 		text-align: left;
+		font-size: 2.5rem;
 	}
 
 	.mainSectionFooter {

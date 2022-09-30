@@ -1,10 +1,13 @@
 // Burger menu
 function responsiveNav() {
+    let burger = document.querySelector(".burgerToggle")
     let nav = document.querySelector("ul");
     if (nav.className === "navList") {
         nav.classList.add("responsive");
+        burger.classList.add("toggled")
     } else {
-        nav.className = "navList"
+        nav.className = "navList";
+        burger.classList = "burgerToggle";
     }
 }
 
@@ -17,13 +20,15 @@ navbar.innerHTML += `
             <p class="mainTitle">La f<img src="/img/svg/carrot.svg" alt="i">ère carotte</p>
         </a>
         <ul class="navList">
-            <li><a href="/pages/menu.html">Menu</a></li>
-            <span>-</span>
-            <li><a href="/pages/about.html">A Propos</a></li>
-            <span>-</span>
-            <li><a href="/pages/contact.html">Contact</a></li>
+            <div class="navInner">
+                <li><a href="/pages/menu.html">Menu</a></li>
+                <span>-</span>
+                <li><a href="/pages/about.html">A Propos</a></li>
+                <span>-</span>
+                <li><a href="/pages/contact.html">Contact</a></li>
+            </div>
             <button class="burgerToggle" onclick="responsiveNav()">
-                <img src="/img/svg/burgerMenu.svg" alt="Open">
+                <div></div>
             </button>
         </ul>
     </div>
