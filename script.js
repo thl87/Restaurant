@@ -50,3 +50,8 @@ footer.innerHTML += `
         </a>
     </div>
 `;
+let form = document.getElementsByClassName("form")
+let input = document.getElementsByClassName("data")
+let inputSubmit = document.getElementById(submit)
+
+

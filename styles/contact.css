@@ -1,5 +1,6 @@
 body {
     margin-top: calc(10vh + 21px);
+    background: var(--light);
 }
 
 h2 {
@@ -11,8 +12,8 @@ h2 {
 
 input {
     border: solid black 1px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 3px black inset;
+
+    /* box-shadow: 0px 0px 2px black inset; */
 
     width: 40vw;
     /* margin-top: 16px; */
@@ -22,10 +23,11 @@ input {
 
 select {
     text-align: center;
-    border: solid gray 1px;
+    border: solid black 1px;
     width: 40vw;
     height: 2vh;
-    border-radius: 10px;
+    /* box-shadow: 0px 0px 2px black inset; */
+
 
 }
 
@@ -47,7 +49,9 @@ textarea {
     padding-bottom: 10vh;
     resize: none;
     font-family: "Roboto";
-    border-radius: 10px;
+    box-shadow: 0px 0px 2px black inset;
+
+
 }
 
 #contactSelect {
@@ -57,9 +61,15 @@ textarea {
 }
 
 form :last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 
     width: 70px;
-    height: 2vh;
+    height: 4vh;
+    background-color: var(--secondary);
+
 
 
 }
@@ -93,10 +103,10 @@ form :last-child {
         padding-left: 0;
     }
 
-    form :last-child {
-        /* width: 20%; */
+    /* form :last-child {
+        width: 20%;
 
-    }
+    } */
 
     .containerContact {
         display: flex;
