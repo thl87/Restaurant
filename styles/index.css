@@ -1,7 +1,3 @@
-body {
-    background-color: var(--light);
-}
-
 header {
     position: relative;
     height: 100vh;

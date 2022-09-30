@@ -110,6 +110,7 @@ html {
 body {
 	line-height: 1;
 	cursor: default;
+	background-color: var(--bgColor);
 }
 
 ol,
@@ -146,6 +147,7 @@ a {
 /* Variables start */
 
 :root {
+	--bgColor: #eeeeee;
     --light: #dddddd;
     --primary: #375a2c;
 	--dark: #111111;
