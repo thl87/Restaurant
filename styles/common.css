@@ -440,15 +440,7 @@ hr {
 		font-size: 8px;
 	}
 
-	.responsiveTitle {
-		display: block;
-	}
-
 	.mainTitle {
-		display: none;
-	}
-
-	.imgLogo {
 		display: none;
 	}
 

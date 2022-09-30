@@ -12,17 +12,14 @@ let navbar = document.querySelector("nav");
 
 navbar.innerHTML += `
     <div class="navDiv">
-        <div class="navLogo">
+        <a href="/pages/index.html" class="navLogo">
             <img class="imgLogo" src="/img/svg/carrotLogo.svg" alt="Logo">
             <p class="mainTitle">La f<img src="/img/svg/carrot.svg" alt="i">ère carotte</p>
-            <p class="responsiveTitle">La fière carotte</p>
-        </div>
+        </a>
         <ul class="navList">
-            <li><a href="/pages/index.html">Home</a></li>
-            <span>-</span>
-            <li><a href="/pages/about.html">About</a></li>
-            <span>-</span>
             <li><a href="/pages/menu.html">Menu</a></li>
+            <span>-</span>
+            <li><a href="/pages/about.html">A Propos</a></li>
             <span>-</span>
             <li><a href="/pages/contact.html">Contact</a></li>
             <button class="burgerToggle" onclick="responsiveNav()">
