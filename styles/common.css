@@ -221,7 +221,6 @@ footer {
 	padding: 5rem 5% 1rem;
 	background-color: var(--primary );
 	color: var(--light);
-	font-family: var(--sans-serif);
 }
 
 .mainSectionFooter {
@@ -244,7 +243,7 @@ footer {
 	margin-bottom: 2rem;
 	font-size: 3rem;
 	font-weight: 700;
-	font-family: var(--title);
+	font-family: var(--sans-serif);
 }
 
 .footerDesc p {
@@ -259,7 +258,7 @@ footer {
 .footerOpenings h2 {
 	margin-bottom: 2rem;
 	font-size: 3rem;
-	font-family: var(--title);
+	font-family: var(--sans-serif);
 	font-weight: 700;
 }
 
