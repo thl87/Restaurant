@@ -1,3 +1,7 @@
+html {
+    box-sizing: border-box;
+}
+
 body {
     margin: 5px;
 }
@@ -18,43 +22,29 @@ h1 {
     margin: 30px;
     font-size: 35px;
     text-align: left;
+    padding-left: 2em;
 }
 
 .paragraphes {
-    width: 55%;
+    width: 75%;
     margin: 0 auto;
 }
 
 p {
     margin: 15px;
     font-size: 15px;
-    width: 300px;
 }
 
 #cook {
     height: 90vh;
 }
 
-.imgresto {
+.imgResto {
     display: flex;
     justify-content: center;
 }
 
-#resto {
+.resto {
     margin: 12px;
-    height: 25vh;
-    object-fit: contain;
-}
-
-
-@media screen and (width < 950px) {
-    .imgresto {
-        flex-wrap: wrap;
-    }
-
-    .main {
-        flex-wrap: wrap;
-    }
-
-
+    height: 35vh;
 }
