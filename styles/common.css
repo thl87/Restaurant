@@ -220,7 +220,7 @@ nav {
 }
 
 .navList.responsive .navInner {
-	width: 101vw;
+	width: 100vw;
 	padding-bottom: 1rem;
 	position: absolute;
 	top: 10vh;

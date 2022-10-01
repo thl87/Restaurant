@@ -84,3 +84,78 @@ footer.innerHTML += `
         </div>
     </section>
 `;
+
+//Menu modal
+const menuDetails = [
+    {name: 'Tartines veggie', url: '/img/imgMenu/imgFood1.jpg', price: '7'},
+    {name: 'Salade et mélange légumes quinoa', url: '/img/imgMenu/imgFood2.jpg', price: '8'},
+    {name: 'Crumble vegan et son mélange de fruits', url: '/img/imgMenu/imgFood3.jpg', price: '8'},
+    {name: 'Salade composée complète', url: '/img/imgMenu/imgFood4.jpg', price: '10'},
+    {name: 'Soupe de lentilles', url: '/img/imgMenu/imgFood5.jpg', price: '11'},
+    {name: 'Hamburger vegan', url: '/img/imgMenu/imgFood6.jpg', price: '13'},
+    {name: 'Gâteau à la carotte', url: '/img/imgMenu/imgFood7.jpg', price: '8'},
+    {name: 'Smoothie', url: '/img/imgMenu/imgFood8.jpg', price: '6'},
+    {name: 'Gâteau au chocolat vegan', url: '/img/imgMenu/imgFood9.jpg', price: '9'},
+]
+const menuButton = document.querySelectorAll(".plate");
+
+for (let i = 0; i < menuDetails.length; i++) {
+    menuButton[i].addEventListener("click", function() {
+        const modal = document.createElement("div");
+        modal.classList.add("modal");
+        modal.style.display = "block";
+        document.body.appendChild(modal);
+
+        const modalInner = document.createElement("div");
+        modalInner.classList.add("modalInner");
+        modal.appendChild(modalInner);
+
+        const modalTitle = document.createElement("h2");
+        modalTitle.classList.add("modalTitle");
+        modalTitle.innerHTML = menuDetails[i].name;
+        modalInner.appendChild(modalTitle);
+
+        const modalSubtitle = document.createElement("p");
+        modalSubtitle.classList.add("modalSubtitle");
+        modalSubtitle.innerHTML = "Lorem ipsum dolor sit, amet consectetur adipisicing elit.";
+        modalInner.appendChild(modalSubtitle);
+
+        const modalImg = document.createElement("img");
+        modalImg.classList.add("modalImg");
+        modalImg.src = menuDetails[i].url;
+        modalInner.appendChild(modalImg);
+
+        const modalTxt = document.createElement("p");
+        modalTxt.classList.add("modalTxt");
+        modalTxt.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse accusamus ipsa enim corporis maxime ad placeat cumque, animi aliquam sapiente ex, numquam ducimus! Iste saepe nemo officia? At, possimus velit. Modi exercitationem, dolore quisquam laudantium, odio iure, corrupti excepturi aspernatur rerum beatae tempora veniam laboriosam impedit ducimus provident asperiores accusantium quos ut nobis nostrum quo doloribus aliquam? Quas, assumenda debitis!";
+        modalInner.appendChild(modalTxt);
+
+        const modalOtherTitle = document.createElement("h3");
+        modalOtherTitle.classList.add("modalOtherTitle");
+        modalOtherTitle.innerHTML = "Allergènes";
+        modalInner.appendChild(modalOtherTitle);
+
+        const modalList = document.createElement("ul");
+        modalList.classList.add("modalList");
+        modalInner.appendChild(modalList);
+
+        const random = Math.floor(Math.random() * 5) + 1;
+        for (let j = 0; j < random; j++) {
+            const modalListEl = document.createElement("li");
+            modalListEl.classList.add("modalListEl");
+            modalListEl.innerHTML = "lorem";
+            modalList.appendChild(modalListEl);
+        }
+
+        const modalPrice = document.createElement("p");
+        modalPrice.classList.add("modalPrice");
+        modalPrice.innerHTML = menuDetails[i].price + ' Euros';
+        modalInner.appendChild(modalPrice);
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    })
+};
