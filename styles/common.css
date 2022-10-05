@@ -148,8 +148,8 @@ a {
 
 :root {
 	--bgColor: #eeeeee;
-    --light: #dddddd;
-    --primary: #375a2c;
+	--light: #dddddd;
+	--primary: #375a2c;
 	--dark: #111111;
 	--sans-serif: 'Roboto', sans-serif;
 	--title: 'Comfortaa', cursive;
@@ -166,11 +166,11 @@ nav {
 	width: 100%;
 	position: fixed;
 	top: 0;
-    height: 10vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--primary);
+	height: 10vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--primary);
 	color: var(--light);
 	font-family: var(--sans-serif);
 	z-index: 3;
@@ -213,10 +213,10 @@ nav {
 }
 
 .navList li {
-    position: relative;
-    list-style-type: none;
-    font-size: 2rem;
-    z-index: 2;
+	position: relative;
+	list-style-type: none;
+	font-size: 2rem;
+	z-index: 2;
 }
 
 
@@ -311,7 +311,7 @@ footer {
 	flex-direction: column;
 	text-align: center;
 	padding: 5rem 5% 1rem;
-	background-color: var(--primary );
+	background-color: var(--primary);
 	color: var(--light);
 }
 

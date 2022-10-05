@@ -1,87 +1,176 @@
 body {
-    margin-top: calc(10vh + 21px);
+    margin-top: 10vh;
 }
 
 h2 {
     font-size: var(--title-size);
     font-family: "Roboto";
-
+    color: var(--light);
     margin-bottom: 30px;
 }
 
-input {
-    border: solid black 1px;
-
-    /* box-shadow: 0px 0px 2px black inset; */
-
-    width: 40vw;
-    /* margin-top: 16px; */
-    padding-left: 5px;
-    height: 2vh;
+.name {
+    display: flex;
+    justify-content: space-between;
 }
 
-select {
+.firstname,
+.lastname {
+    width: 45%;
+    height: 1.5em;
+    background-color: #181C1F;
+    font-size: var(--font-size);
+    border: none;
+    border-bottom: solid var(--light) 1px;
+    color: var(--light);
+    padding: 0.5rem;
+}
+
+
+
+.firstname,
+.lastname:focus,
+.data:focus {
+    outline: none;
+}
+
+.data {
+    font-size: var(--font-size);
+    border: none;
+    border-bottom: solid var(--light) 1px;
+    width: 100%;
+    background-color: #181C1F;
+    height: 1.8em;
+    padding: 0.5rem;
+
+
+    color: var(--light);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #181C1F inset;
+    -webkit-text-fill-color: var(--light);
+
+}
+
+#contactSelect {
+    font-size: var(--font-size);
+    background-color: #181C1F;
+    padding-left: 5px;
     text-align: center;
-    border: solid black 1px;
-    width: 40vw;
-    height: 2vh;
-    /* box-shadow: 0px 0px 2px black inset; */
-
-
+    border: solid var(--light) 1px;
+    width: 100%;
+    color: gray;
+    height: 1.8em;
 }
 
 form {
     /* border: 1px yellow solid; */
     margin-top: 16px;
+    padding-right: 10%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 90%;
+    background-color: #181C1F;
+
 }
 
 textarea {
-    margin-top: 16px;
-    ;
+    font-size: var(--font-size);
     color: gray;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 10vh;
+    background-color: #181C1F;
+    height: 15vh;
     resize: none;
     font-family: "Roboto";
-    box-shadow: 0px 0px 2px black inset;
+    border: none;
+    border: solid var(--light) 1px;
+    padding: 0.5rem;
 }
 
-#contactSelect {
-    width: 100%;
-    height: auto;
-    color: gray
-}
 
-form :last-child {
+#submit {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 70px;
-    height: 4vh;
-    background-color: var(--secondary);
+    height: 2em;
+    /* background-color: var(--primary); */
+    /* color: var(--light); */
     cursor: pointer;
+    border: none;
+    border: solid var(--light) 1px
 }
 
 .containerContact {
     display: flex;
     flex-direction: row;
     /* border: 2px black solid; */
-    margin: 2% 5% 3%;
+    /* margin: 10% 5% 5% 5%; */
     justify-content: center;
 }
 
-.contactForm {
+iframe {
+    margin-bottom: 24px;
+    margin-top: 24px;
     margin-right: 5%;
-    /* border: 1px red solid; */
+}
+
+.contactForm {
+    padding-bottom: 24px;
+    padding-top: 24px;
+    margin-right: 5%;
+    padding-left: 5%;
+    /* border: 1px white solid; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 35%;
+    background-color: #181C1F;
 }
+
+.popup {
+    position: relative;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light);
+    border: 3px solid black;
+    position: fixed;
+    height: 10%;
+    width: 20%;
+    left: 35%;
+    right: 50%;
+    top: 45%;
+    bottom: 50%;
+    z-index: 6;
+
+    border-radius: 0px 40px 0px 40px;
+    ;
+}
+
+.message {
+    font-size: 2rem;
+    font-family: var(--sans-serif);
+}
+
+.megaDiv {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+
+
+
+    height: 100%;
+    width: 100%;
+
+
+}
+
 
 /* CSS SMARTPHONE */
 
@@ -95,11 +184,6 @@ form :last-child {
         padding-left: 0;
     }
 
-    /* form :last-child {
-        width: 20%;
-
-    } */
-
     .containerContact {
         display: flex;
         flex-direction: column;
@@ -108,6 +192,7 @@ form :last-child {
     .contactForm {
         margin: 0;
         height: 500px;
+        width: 100%;
     }
 
     iframe {

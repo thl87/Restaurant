@@ -82,3 +82,24 @@ footer.innerHTML += `
         </div>
     </section>
 `;
+
+const onSubmit = (e) => {
+    e.preventDefault();
+    const popupContainer = document.querySelector(".popupContainer")
+    const firstnameValue = document.querySelector(".firstname").value
+    const popup = document.createElement("div")
+    const message = document.createElement("p")
+    const megaDiv = document.createElement("div")
+    megaDiv.classList.add("megaDiv")
+    document.body.appendChild(megaDiv)
+    popup.classList.add("popup")
+    message.classList.add("message")
+    message.innerHTML = `Merci ${firstnameValue}`;
+    popup.style.display = "flex"
+    megaDiv.appendChild(popup)
+    popup.appendChild(message)
+    popup.addEventListener("click", () => {
+        popup.style.display = "none"
+        megaDiv.style.display = "none"
+    })
+}
