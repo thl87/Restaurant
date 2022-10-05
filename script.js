@@ -11,8 +11,8 @@ function responsiveNav() {
     }
 }
 
-let navbar = document.querySelector("nav");
 
+let navbar = document.querySelector("nav");
 navbar.innerHTML += `
     <div class="navDiv">
         <a href="/pages/index.html" class="navLogo">
@@ -34,8 +34,8 @@ navbar.innerHTML += `
     </div>
 `;
 
-let footer = document.querySelector("footer");
 
+let footer = document.querySelector("footer");
 footer.innerHTML += `
     <section class="mainSectionFooter">
         <div class="footerDesc">
