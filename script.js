@@ -13,8 +13,9 @@ let navbar = document.querySelector("nav");
 navbar.innerHTML += `
     <div class="navDiv">
         <div class="navLogo">
-            <img src="/img/svg/carrotLogo.svg" alt="Logo">
-            <p>La f<img src="/img/svg/carrot.svg" alt="i">ère carotte</p>
+            <img class="imgLogo" src="/img/svg/carrotLogo.svg" alt="Logo">
+            <p class="mainTitle">La f<img src="/img/svg/carrot.svg" alt="i">ère carotte</p>
+            <p class="responsiveTitle">La fière carotte</p>
         </div>
         <ul class="navList">
             <li><a href="/pages/index.html">Home</a></li>
