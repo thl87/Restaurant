@@ -94,7 +94,7 @@ const onSubmit = (e) => {
     document.body.appendChild(megaDiv)
     popup.classList.add("popup")
     message.classList.add("message")
-    message.innerHTML = `Merci ${firstnameValue}`;
+    message.innerHTML = `Merci pour votre message <br><span> ${firstnameValue}</span>`;
     popup.style.display = "flex"
     megaDiv.appendChild(popup)
     popup.appendChild(message)

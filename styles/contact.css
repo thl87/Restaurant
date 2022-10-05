@@ -138,7 +138,7 @@ iframe {
     align-items: center;
     justify-content: center;
     background-color: var(--light);
-    border: 3px solid black;
+    /* border: 3px solid black; */
     position: fixed;
     height: 10%;
     width: 20%;
@@ -147,8 +147,9 @@ iframe {
     top: 45%;
     bottom: 50%;
     z-index: 6;
-
-    border-radius: 0px 40px 0px 40px;
+    text-align: center;
+    box-shadow: 5px 5px 10px 0px #000000;
+    border-radius: 10px 10px 10px 10px;
     ;
 }
 
@@ -162,13 +163,8 @@ iframe {
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.4);
-
-
-
     height: 100%;
     width: 100%;
-
-
 }
 
 
