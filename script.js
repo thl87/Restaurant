@@ -94,7 +94,7 @@ const onSubmit = (e) => {
     document.body.appendChild(megaDiv)
     popup.classList.add("popup")
     message.classList.add("message")
-    message.innerHTML = `Merci pour votre message <br><span> ${firstnameValue}</span>`;
+    message.innerHTML = `Merci pour votre message <br>${firstnameValue}`;
     popup.style.display = "flex"
     megaDiv.appendChild(popup)
     popup.appendChild(message)
@@ -102,4 +102,10 @@ const onSubmit = (e) => {
         popup.style.display = "none"
         megaDiv.style.display = "none"
     })
+
+    window.onclick = function (event) {
+        if (event.target == megaDiv) {
+            megaDiv.style.display = "none";
+        }
+    }
 }

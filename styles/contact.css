@@ -68,7 +68,6 @@ input:-webkit-autofill:active {
 }
 
 form {
-    /* border: 1px yellow solid; */
     margin-top: 16px;
     padding-right: 10%;
     display: flex;
@@ -98,8 +97,7 @@ textarea {
     justify-content: center;
     width: 70px;
     height: 2em;
-    /* background-color: var(--primary); */
-    /* color: var(--light); */
+    background-color: var(--light);
     cursor: pointer;
     border: none;
     border: solid var(--light) 1px
@@ -108,8 +106,6 @@ textarea {
 .containerContact {
     display: flex;
     flex-direction: row;
-    /* border: 2px black solid; */
-    /* margin: 10% 5% 5% 5%; */
     justify-content: center;
 }
 
@@ -124,7 +120,6 @@ iframe {
     padding-top: 24px;
     margin-right: 5%;
     padding-left: 5%;
-    /* border: 1px white solid; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -138,7 +133,6 @@ iframe {
     align-items: center;
     justify-content: center;
     background-color: var(--light);
-    /* border: 3px solid black; */
     position: fixed;
     height: 10%;
     width: 20%;
@@ -165,6 +159,7 @@ iframe {
     background-color: rgba(0, 0, 0, 0.4);
     height: 100%;
     width: 100%;
+    z-index: 4;
 }
 
 
