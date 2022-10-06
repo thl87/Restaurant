@@ -20,11 +20,7 @@ main {
 
 h1 {
     margin: 30px;
-<<<<<<< HEAD
-    font-size: 5rem;
-=======
     font-size: var(--title-size);
->>>>>>> aboutUs
     text-align: left;
     text-transform: capitalize;
     padding-left: 2em;
