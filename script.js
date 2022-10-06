@@ -85,6 +85,36 @@ footer.innerHTML += `
     </section>
 `;
 
+//Form modal
+const formSubmit = (event) => {
+    event.preventDefault();
+    const firstnameValue = document.querySelector(".firstname").value;
+    const popup = document.createElement("div");
+    const message = document.createElement("p");
+    const megaDiv = document.createElement("div");
+    megaDiv.classList.add("megaDiv");
+    document.body.appendChild(megaDiv);
+    popup.classList.add("popup");
+    message.classList.add("message");
+    message.innerHTML = `Merci pour votre message <br>${firstnameValue}`;
+    popup.style.display = "flex";
+    megaDiv.appendChild(popup);
+    popup.appendChild(message);
+    popup.addEventListener("click", () => {
+        popup.style.display = "none";
+        megaDiv.style.display = "none";
+    });
+
+    window.onclick = function (event) {
+        if (event.target == megaDiv) {
+            megaDiv.style.display = "none";
+        };
+    };
+
+    const form = document.querySelector("form");
+    form.reset();
+};
+
 //Menu modal
 const menuDetails = [
     {name: 'Tartines veggie', url: '/img/imagesMenu/imgFood1.jpg', price: '7'},

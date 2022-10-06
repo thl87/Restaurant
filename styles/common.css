@@ -6,7 +6,6 @@ div,
 span,
 applet,
 object,
-iframe,
 h1,
 h2,
 h3,
@@ -188,7 +187,7 @@ nav {
 
 .navLogo {
 	display: flex;
-	align-items: center;
+	align-items: initial;
 	justify-content: center;
 }
 

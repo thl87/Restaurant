@@ -24,28 +24,35 @@
     <nav></nav>
     <main class="containerContact">
         <div class="contactForm">
-            <h1>Contact</h1>
-            <form>
-                <input name="nom" type="text" placeholder="Nom Prénom" class="data" id="name">
-                <input name="number" type placeholder="06 31 64 55 39" class="data">
-                <input name=" mail" type="email" placeholder="lafierecarrotte@gmail.com" class="data">
-                <select name="contactSelect" id="contactSelect">
-                    <option value="">--choisir catégorie-- </option>
+            <h2>Contact</h2>
+            <form onsubmit="formSubmit(event)">
+                <div class="name">
+                    <input name="lastname" type="text" placeholder="Nom " class="lastname" required="required">
+                    <input name="firstname" type="text" placeholder="Prénom" class="firstname" required="required">
+                </div>
+                <input name="number" type="tel" placeholder="06 31 64 55 39" class="data" required="required">
+                <input name=" mail" type="email" placeholder="lafierecarrotte@gmail.com" class="data"
+                    required="required">
+                <select name="contactSelect" id="contactSelect" required="required">
+                    <option value="choose" disabled>Sujet</option>
                     <option value="booking">Réservation</option>
-                    <option value="contact">Autre demande</option>
+                    <option value="contact">Autre</option>
                 </select>
-                <textarea name="comments" id="" cols="30" rows="10"
-                    placeholder="Entrer votre demande de reservation ou autre si besoin" class="data"></textarea>
+                <textarea name="comments" cols="30" rows="10"
+                    placeholder="Message" required="required"
+                    class="textarea"></textarea>
+
                 <input type="submit" value="Envoyer" id="submit">
             </form>
         </div>
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d677.5663996988026!2d-1.5480985707802986!3d47.21138519869751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805eeb04e035b03%3A0xfe166fb643fd3846!2s4%20Rue%20Baron%2C%2044000%20Nantes!5e0!3m2!1sfr!2sfr!4v1664365850930!5m2!1sfr!2sfr"
-            width="900" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+            width="900" height="500" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
+
     </main>
     <footer> </footer>
-    <script src="../script.js"></script>
+    <script src="/script.js"></script>
 </body>
 
 </html>
