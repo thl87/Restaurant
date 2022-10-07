@@ -163,9 +163,8 @@ h1 {
 
     .producteursPhoto {
         height: 30vh;
-        justify-items: center;
-        margin-right: initial;
-        margin-bottom: 3rem;
+        width: 90%;
+        margin: 0 auto 3rem;
     }
 
     .imgResto {

@@ -11,10 +11,10 @@
 
 <h2>Contenu</h2>  
 
-- Page de présentation  
+- Page de présentation : Thibaud  
 
-- Page about  
+- Page about : Thomas  
 
-- Page de menu  
+- Page de menu : Jérémie  
 
-- Page de contact  
+- Page de contact : Nicolas  
