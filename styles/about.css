@@ -1,0 +1,187 @@
+html {
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: calc(10vh + 4rem) 20px 20px 20px;
+}
+
+.aboutus {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+h1 {
+    margin: 30px;
+    font-size: var(--title-size);
+    text-align: left;
+    text-transform: capitalize;
+    padding-left: 2em;
+    font-family: var(--sans-serif);
+}
+
+.paragraphes {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.text {
+    margin: 15px;
+    font-size: 15px;
+}
+
+/* photos */
+#cook {
+    border: 1px solid var(--primary);
+    width: 50rem;
+    min-width: 30rem;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.imgResto {
+    display: flex;
+    justify-content: center;
+}
+
+.resto {
+    border: 1px solid var(--primary);
+    margin: 12px 12px 0 12px;
+    height: 35vh;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/* fin photos */
+
+.producteurs {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 20px 20px 20px;
+}
+
+.producteurs h2 {
+    margin-top: 1rem;
+    font-size: 3rem;
+    padding-left: 3rem;
+}
+
+#producteur1,
+#producteur3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    color: var(--light);
+    background-color: var(--primary);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#producteur2 {
+    flex-direction: row-reverse;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#producteur3 {
+    margin-bottom: 2rem;
+}
+
+.producteurs p {
+    font-size: 15px;
+    padding: 3rem;
+}
+
+.producteursPhoto {
+    height: 35vh;
+    margin: 3rem 3rem 3rem 0;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    #cook {
+        display: none;
+    }
+}
+
+@media screen and (width < 768px) {
+    .resto {
+        height: 25vh;
+    }
+}
+
+@media screen and (width < 660px) {
+
+    .resto {
+        margin: 12px 12px 0 12px;
+        height: 25vh;
+    }
+
+    h1 {
+        text-align: center;
+        margin: 20px;
+        font-size: 4rem;
+        padding-left: 0px;
+        font-family: var(--sans-serif);
+    }
+
+    .paragraphes {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #producteur1,
+    #producteur2,
+    #producteur3 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .producteurs h2 {
+        padding-left: 16px;
+    }
+
+    .producteurs p {
+        font-size: 15px;
+        padding: 2rem;
+    }
+
+    .producteursPhoto {
+        height: 30vh;
+        justify-items: center;
+        margin-right: initial;
+        margin-bottom: 3rem;
+    }
+
+    .imgResto {
+        flex-direction: column;
+    }
+}
+
+@media screen and (width < 400px) {
+    .producteurs h2 {
+        text-align: center;
+        padding-left: initial;
+    }
+}
+
+@media screen and (width < 340px) {
+    .resto {
+        height: 20vh;
+    }
+}

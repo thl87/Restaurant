@@ -1,0 +1,270 @@
+header {
+    position: relative;
+    height: 100vh;
+    background-image: url('/img/imgHome/header.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--light);
+}
+
+h1 {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    font-size: 8rem;
+    font-family: var(--title);
+    text-align: center;
+    color: var(--primary);
+    mix-blend-mode: plus-lighter;
+    transform: translate(50%, -50%);
+    z-index: 2;
+}
+
+.headerLinks {
+    position: absolute;
+    width: 100%;
+    top: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+.headerLinks a {
+    padding: 0.75rem 1.5rem;
+    border: 1px solid var(--light);
+    font-size: 2.5rem;
+    font-family: var(--sans-serif);
+}
+
+.mainCta {
+    margin-right: 5rem;
+    background-color: var(--light);
+    color: var(--primary);
+    transition: 0.3s ease-in-out;
+}
+
+.mainCta:hover {
+    background-color: transparent;
+    color: var(--light);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.sectionBanner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 6rem 0;
+    color: var(--light);
+    background-color: #375a2c;
+    background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.sectionBanner h2 {
+    margin-bottom: 1rem;
+    font-size: 4.5rem;
+    font-family: var(--sans-serif);
+    text-align: center;
+}
+
+.sectionBanner p {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+.sectionBanner a {
+    padding: 0.5rem 1.5rem;
+    font-size: 2.5rem;
+    font-family: var(--sans-serif);
+    text-transform: capitalize;
+    border: 1px solid var(--dark);
+    background-color: var(--primary);
+    box-shadow: rgba(26, 26, 26, 0.4) 4px 4px, rgba(26, 26, 26, 0.3) 8px 8px, rgba(26, 26, 26, 0.2) 12px 12px, rgba(26, 26, 26, 0.1) 16px 16px, rgba(26, 26, 26, 0.05) 20px 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.sectionBanner a:hover {
+    transform: scale(1.05);
+    box-shadow: none;
+}
+
+.valuesImg {
+    border-right: 2px solid var(--primary);
+    border-bottom: 2px solid var(--primary);
+}
+
+.restaurantImg {
+    border-top: 2px solid var(--primary);
+    border-left: 2px solid var(--primary);
+}
+
+.sectionGrid {
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.sectionGridTxt {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sectionGridTxt h2 {
+    font-size: 3rem;
+    font-family: var(--sans-serif);
+    text-transform: capitalize;
+}
+
+.sectionGridTxt p {
+    margin: 2rem 0 3rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.sectionGridLink {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionGridLink a {
+    padding: 0.5rem 1.5rem;
+    font-size: 2.5rem;
+    font-family: var(--sans-serif);
+    border: 1px solid var(--primary);
+    text-transform: capitalize;
+    transition: 0.3s ease-in-out;
+}
+
+.sectionGridLink a:hover {
+    transform: scale(1.05);
+}
+
+.sectionGridContact {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sectionGridContact span {
+    color: var(--primary);
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: var(--sans-serif);
+    text-transform: capitalize;
+}
+
+.sectionGrid img {
+    width: 100%;
+}
+
+.sectionSocial {
+    padding: 3rem 0;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.sectionSocial h2 {
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.sectionSocial div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    gap: 3rem;
+}
+
+.sectionSocial div img {
+    width: 80%;
+    height: 80%;
+    border: 1px solid var(--primary);
+}
+
+@media screen and (max-width: 768px) {
+
+    .aboutTxt {
+        width: 90%;
+    }
+
+    .textContainer div {
+        margin-bottom: 5rem;
+    }
+
+    .textContainer div:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .firstSubtitle span {
+        display: block;
+        padding-bottom: 2rem;
+    }
+
+    .firstSubtitle span:last-of-type {
+        padding-bottom: 0;
+    }
+
+    .firstSubtitle span:nth-last-of-type(2) {
+        display: none;
+    }
+
+    .firstSubtitle br {
+        display: block;
+    }
+
+    .firstGrid {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 2rem;
+    }
+
+    .secondGrid {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-bottom: 0;
+    }
+
+    .sectionGridTxt {
+        margin-top: 2rem;
+    }
+
+    .sectionGrid img {
+        border: none;
+    }
+
+    .sectionSocial div {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .sectionSocial div :nth-child(7) {
+        display: none;
+    }
+
+    .sectionSocial div :nth-child(8) {
+        display: none;
+    }
+}
