@@ -15,17 +15,17 @@ function responsiveNav() {
 let navbar = document.querySelector("nav");
 navbar.innerHTML += `
     <div class="navDiv">
-        <a href="/pages/index.html" class="navLogo">
-            <img class="imgLogo" src="/img/svg/carrotLogo.svg" alt="Logo">
-            <p class="mainTitle">La f<img src="/img/svg/carrot.svg" alt="i">ère carotte</p>
+        <a href="index.html" class="navLogo">
+            <img class="imgLogo" src="../img/svg/carrotLogo.svg" alt="Logo">
+            <p class="mainTitle">La f<img src="../img/svg/carrot.svg" alt="i">ère carotte</p>
         </a>
         <ul class="navList">
             <div class="navInner">
-                <li><a href="/pages/menu.html">Menu</a></li>
+                <li><a href="menu.html">Menu</a></li>
                 <span>-</span>
-                <li><a href="/pages/about.html">A Propos</a></li>
+                <li><a href="about.html">A Propos</a></li>
                 <span>-</span>
-                <li><a href="/pages/contact.html">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </div>
             <button class="burgerToggle" onclick="responsiveNav()">
                 <div></div>
@@ -61,13 +61,13 @@ footer.innerHTML += `
     <section class="secondSectionFooter">
         <div class="footerSocials">
             <a href="#">
-                <img src="/img/logo/facebook.svg" alt="Facebook" width="30" height="30">
+                <img src="../img/logo/facebook.svg" alt="Facebook" width="30" height="30">
             </a>
             <a href="#">
-                <img src="/img/logo/instagram.svg" alt="Instagram" width="30" height="30">
+                <img src="../img/logo/instagram.svg" alt="Instagram" width="30" height="30">
             </a>
             <a href="#">
-                <img src="/img/logo/tripadvisor.svg" alt="Tripadvisor" width="30" height="30">
+                <img src="../img/logo/tripadvisor.svg" alt="Tripadvisor" width="30" height="30">
             </a>
         </div>
         <div class="footerLinks">
@@ -117,15 +117,15 @@ const formSubmit = (event) => {
 
 //Menu modal
 const menuDetails = [
-    {name: 'Tartines veggie', url: '/img/imagesMenu/imgFood1.jpg', price: '7'},
-    {name: 'Salade quinoa', url: '/img/imagesMenu/imgFood2.jpg', price: '8'},
-    {name: 'Crumble vegan', url: '/img/imagesMenu/imgFood3.jpg', price: '8'},
-    {name: 'Salade composée', url: '/img/imagesMenu/imgFood4.jpg', price: '10'},
-    {name: 'Soupe de lentilles', url: '/img/imagesMenu/imgFood5.jpg', price: '11'},
-    {name: 'Hamburger vegan', url: '/img/imagesMenu/imgFood6.jpg', price: '13'},
-    {name: 'Carrot cake', url: '/img/imagesMenu/imgFood7.jpg', price: '8'},
-    {name: 'Smoothie', url: '/img/imagesMenu/imgFood8.jpg', price: '6'},
-    {name: 'Gâteau au chocolat', url: '/img/imagesMenu/imgFood9.jpg', price: '9'},
+    {name: 'Tartines veggie', url: '../img/imagesMenu/imgFood1.jpg', price: '7'},
+    {name: 'Salade quinoa', url: '../img/imagesMenu/imgFood2.jpg', price: '8'},
+    {name: 'Crumble vegan', url: '../img/imagesMenu/imgFood3.jpg', price: '8'},
+    {name: 'Salade composée', url: '../img/imagesMenu/imgFood4.jpg', price: '10'},
+    {name: 'Soupe de lentilles', url: '../img/imagesMenu/imgFood5.jpg', price: '11'},
+    {name: 'Hamburger vegan', url: '../img/imagesMenu/imgFood6.jpg', price: '13'},
+    {name: 'Carrot cake', url: '../img/imagesMenu/imgFood7.jpg', price: '8'},
+    {name: 'Smoothie', url: '../img/imagesMenu/imgFood8.jpg', price: '6'},
+    {name: 'Gâteau au chocolat', url: '../img/imagesMenu/imgFood9.jpg', price: '9'},
 ]
 const menuButton = document.querySelectorAll(".plate");
 
